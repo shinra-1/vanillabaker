@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'lobster';
+    src: url('../fonts/Lobster-Regular.ttf');
+  }
+body{
+    background-image: url('../img/loginbg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-size:20px;
+}
+.wrapper{
+    position: absolute;
+    width: 500px;
+    padding: 20px;
+    background-color: white;
+    margin-left: 33%;
+    margin-top: 2%;
+    border-radius: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.heading{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'lobster';
+    margin-left: -8%;
+}
+form{
+    font-size: 1.2rem;
+}
+.form-col{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+}
+.form-group{
+    width: 200px;
+}
+.form-group2 .btn{
+    width: 100px;
+    margin-left: 25%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    height: 40px;
+    font-size: 18px;
+}
+.redirect{
+    text-align: center;
+}
+
+@media screen and (max-width:980px){
+    .wrapper{
+        width: 350px;
+        margin-left: 33%;
+        margin-top: 0%;
+    }
+    .form-group .btn{
+        margin-left: 15%;
+        height: 35px;
+        font-size: 18px;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:430px){
+    .wrapper{
+        width: 300px;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+    .form-group .btn{
+        margin-left: 35%;
+        width: 100px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .form-group input{
+        font-size: 20px;
+    }
+    .form-group label{
+        font-size: 1rem;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+}
